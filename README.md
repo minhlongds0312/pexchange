@@ -1,5 +1,1 @@
-1. Describe how your exchange works.
-Firstly, I implement the neccessary structs and functions to make it easier to keep track of the elements. I have also implemented Queue-like objects to perform actions on them based on their time priority. Then I attempt to create the corresponding "lists" of objects (products, traders, etc.). I then fork my program to execute the trader binaries, and get their attributes (pid, pipe names, etc). Finally, I enter the event loop where I constantly wait for signals and then read commandsexecute them correspondingly
-2. Describe your design decisions for the trader and how it's fault-tolerant.
-For the autotrader, I follow the simple steps of first attempting to open the fifo files, parsing the commands, and then send the corresponding commands to the parents once it has read an order from the exchange fifo (essentially making a counteroffer). I have implemented error handlers in case the fifo files are un-openable (corrupted, etc.).
-3. Describe your tests and how to run them.
+
